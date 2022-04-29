@@ -5,8 +5,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 
 entity counter_generic is
-	-- Generic nÃ¡m umoÅ¾Åˆuje nastavit "parametry" obvodu
-	-- V tomhle pÅ™Ã­padÄ› to je Å¡Ã­Å™ka ÄÃ­taÄe, kterÃ¡ je defaultnÄ› 4
+	-- Generic nám umoòuje nastavit "parametry" obvodu
+	-- V tomhle pøípadì to je šíøka èítaèe, která je defaultnì 4
     generic (
         C_WIDTH : integer := 4
     );
@@ -14,35 +14,38 @@ entity counter_generic is
         clk : in std_logic;
         rst : in std_logic;
         enable : in std_logic;
-        up_not_down : in std_logic;
+		limit: in std_logic_vector(C_WIDTH - 1 downto 0);
+		C: out std_logic;
         Q : out std_logic_vector(C_WIDTH - 1 downto 0)
     );
 end counter_generic;
 
 architecture Behavioral of counter_generic is
-	-- Unsigned : MÅ¯Å¾ou se provÃ¡dÄ›t aritmetickÃ© operace
-    signal counter_reg : unsigned(Q'range); 
-
+	-- Unsigned : Mùou se provádìt aritmetické operace
+    signal counter_reg : unsigned(Q'range);
+	signal overflow : std_logic := '0';
 begin
-
-    cyclic_counter : process(clk)
-	    variable inc : integer := 1;
+    
+	cnt : process(clk)
     begin
         if rising_edge(clk) then
             if rst = '1' then
                 counter_reg <= (others => '0');
+				overflow <= '0';
             elsif enable = '1' then
-                if up_not_down = '1' then
-	                inc := 1;
-	            else
-		            inc := -1;
-                end if;
-	            
-	            counter_reg <= counter_reg + inc;
+				if (counter_reg = unsigned(limit)) then
+					overflow <= '1';
+					counter_reg <= (others => '0');
+				else
+					overflow <= '0';
+					counter_reg <= counter_reg + 1;
+				end if;							   
             end if;
         end if;
-    end process;
 
+    end process;
+	
+	C <= '1' when counter_reg = unsigned(limit) else '0';
     Q <= std_logic_vector(counter_reg);
 
 end Behavioral;

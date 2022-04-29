@@ -1,0 +1,4 @@
+i<>.\src\counter_generic.vhd
+i<>.\src\counter_tb.vhd
+i<>.\src\pulse.vhd
+i<>.\src\seg.vhd

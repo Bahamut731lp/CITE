@@ -1,0 +1,9 @@
+122
+~E 1 "../src/counter_generic.vhd" 7 counter_generic
+~A 1 "../src/counter_generic.vhd" 23 Behavioral
+~E 1 "../src/pulse.vhd" 10 pulse
+~A 1 "../src/pulse.vhd" 18 Behavioral
+~E 1 "../src/seg.vhd" 13 seg
+~A 1 "../src/seg.vhd" 20 Behavioral
+~E 1 "../src/counter_tb.vhd" 5 top
+~A 1 "../src/counter_tb.vhd" 8 Behavioral
