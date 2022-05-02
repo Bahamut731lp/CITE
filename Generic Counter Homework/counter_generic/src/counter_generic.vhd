@@ -23,7 +23,6 @@ end counter_generic;
 architecture Behavioral of counter_generic is
 	-- Unsigned : Mùžou se provádìt aritmetické operace
     signal counter_reg : unsigned(Q'range);
-	signal overflow : std_logic := '0';
 begin
     
 	cnt : process(clk)
@@ -31,13 +30,10 @@ begin
         if rising_edge(clk) then
             if rst = '1' then
                 counter_reg <= (others => '0');
-				overflow <= '0';
             elsif enable = '1' then
 				if (counter_reg = unsigned(limit)) then
-					overflow <= '1';
 					counter_reg <= (others => '0');
 				else
-					overflow <= '0';
 					counter_reg <= counter_reg + 1;
 				end if;							   
             end if;
