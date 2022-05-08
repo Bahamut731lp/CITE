@@ -1,12 +1,12 @@
-timestamp=1651492176522
+timestamp=1652019046634
 
 [~A]
-ModifyID=124
+ModifyID=128
 Version=74
 
 [~MFT]
-0=2|0counter_generic.mgf|139697|132619
-1=2|1counter_generic.mgf|243983|240148
+0=8|0counter_generic.mgf|147321|140206
+1=2|1counter_generic.mgf|256070|252235
 3=2|3counter_generic.mgf|49806|47411
 
 [counter_generic]
@@ -43,19 +43,18 @@ Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|094f940f4bf8f13
 Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4179369499b969d2d0a6b11c28ea154f8
 
 [top]
-A/behavioral=A/Behavioral 21|../src/counter_tb.vhd|8|1*243983
+A/behavioral=A/Behavioral 21|../src/counter_tb.vhd|8|1*256070
 BinW64/behavioral=3*49806
 I=0*22107
-I/behavioral=I/Behavioral 0*139697
+I/behavioral=I/Behavioral 0*147321
 M=11|2|vef|1650898638021|../src/counter_tb.vhd|0*21878*0x9724e88fed44ff15e382e21735b4fd38ebbd0b99|0*22029*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=M/Behavioral 21|2|vef|1651492176490|../src/counter_tb.vhd|0*136952*0xbc27750c8874d3c4908f5694839484a3458e0e17|0*138479*0x20116f55b147878295aeff36dce7fc50
+M/behavioral=M/Behavioral 21|2|vef|1652019046593|../src/counter_tb.vhd|0*145665*0xa4dd95db8c450fa521dce7f63046cc5fa88b103a|0*147229*0x20116f55b147878295aeff36dce7fc50
 R=../src/counter_tb.vhd|5
 Version=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|f1fdecad8dc292011c024b8d633bc5c7213bc579c6ddbee3be0baa6c8c323895
-Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4074a4e79509fd2dbd9ac0199e6ea1f5a
+Version/behavioral=13.0.376.8320 (Windows64)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4c501be729dc65acac61511d5e8419fee
 
 [~U]
 counter_generic=11|0*62412|
 pulse=11|0*5923|
 seg=11|0*17882|
 top=11|0*21767|
-

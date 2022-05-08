@@ -6,8 +6,8 @@ FileTimeLow=2910235529
 FileTimeHigh=30957082
 Status=Compiled
 [COMPILESTATUS|.\src\counter_tb.vhd]
-FileTimeLow=3166199274
-FileTimeHigh=30956516
+FileTimeLow=1667998907
+FileTimeHigh=30958309
 Status=Compiled
 [COMPILESTATUS|.\src\pulse.vhd]
 FileTimeLow=3226214356
@@ -36,7 +36,7 @@ WindowWorkspaceInfo="LAAAAAAAAAADAAAA/////////////////////80AAACZAAAA/wUAAIoCAAA
 [General]
 CurrentVersion=103
 [CACHEDOC|Aldec.Project.Generic.7|.\counter_generic\counter_generic.adf|]
-Path=
+Path=/top
 [CACHEDOC|Aldec.Hde.HdePlugIn.7|.\counter_generic\src/counter_tb.vhd|]
 CurrentLine=33
 CurrentColumn=24

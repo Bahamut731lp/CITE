@@ -1,16 +1,295 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 # Breakpoint set on signal "/top/CT(2)".
-acom -O3 -e 100 -work counter_generic -2002  $dsn/src/counter_generic.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/counter_generic_workspace/counter_generic/src/counter_generic.vhd
-# Compile Entity "counter_generic"
-# Compile Architecture "Behavioral" of Entity "counter_generic"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+top top Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6470 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\counter_generic_workspace\counter_generic\src\wave.asdb
+#  16:03, nedìle 8. kvìtna 2022
+#  Simulation has been initialized
+# Breakpoint set on signal "/top/CT(2)".
+run 500 ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN1,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN2,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN3,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN4,  Process: line__44.
+# KERNEL: Stopped at time 15 ns + 2.
+# Stopped at breakpoint on signal "/top/CT(2)" (Event condition).
+# add wave -noreg {/top/clk}
+# add wave -noreg {/top/rst}
+# add wave -noreg {/top/enable}
+# add wave -noreg {/top/CT}
+# add wave -noreg {/top/CARRY}
+# add wave -noreg {/top/sig2}
+# add wave -noreg {/top/sig3}
+# add wave -noreg {/top/sig4}
+# VSIM: 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/counter_generic_workspace/counter_generic/src/wave.asdb'.
+run 500 ns
+# KERNEL: stopped at time: 515 ns
+# KERNEL: stopped at time: 615 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+top top Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6470 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\counter_generic_workspace\counter_generic\src\wave.asdb
+#  16:04, nedìle 8. kvìtna 2022
+#  Simulation has been initialized
+# Breakpoint set on signal "/top/CT(2)".
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN1,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN2,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN3,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN4,  Process: line__44.
+# KERNEL: Stopped at time 15 ns + 2.
+# Stopped at breakpoint on signal "/top/CT(2)" (Event condition).
+# add wave -noreg {/top/clk}
+# add wave -noreg {/top/rst}
+# add wave -noreg {/top/enable}
+# add wave -noreg {/top/CT}
+# add wave -noreg {/top/CARRY}
+# add wave -noreg {/top/sig2}
+# add wave -noreg {/top/sig3}
+# add wave -noreg {/top/sig4}
+# VSIM: 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/counter_generic_workspace/counter_generic/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 115 ns
+run 100 ns
+# KERNEL: stopped at time: 215 ns
+run 100 ns
+# KERNEL: stopped at time: 315 ns
+run 100 ns
 acom -O3 -e 100 -work counter_generic -2002  $dsn/src/counter_tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/counter_generic_workspace/counter_generic/src/counter_tb.vhd
 # Compile Entity "top"
 # Compile Architecture "Behavioral" of Entity "top"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# Breakpoint on signal "/top/CT(2)" cleared.
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6470 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\counter_generic_workspace\counter_generic\src\wave.asdb
+#  16:06, nedìle 8. kvìtna 2022
+#  Simulation has been initialized
+# Breakpoint set on signal "/top/CT(2)".
+# add wave -noreg {/top/clk}
+# add wave -noreg {/top/rst}
+# add wave -noreg {/top/enable}
+# add wave -noreg {/top/CT}
+# add wave -noreg {/top/CARRY}
+# add wave -noreg {/top/sig2}
+# add wave -noreg {/top/sig3}
+# add wave -noreg {/top/sig4}
+# KERNEL: Warning: KERNEL_0291 Object "/top/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/top/rst" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/top/enable" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/top/CT" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/top/CARRY" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/top/sig2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/top/sig3" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/top/sig4" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/counter_generic_workspace/counter_generic/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN1,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN2,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN3,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN4,  Process: line__44.
+# KERNEL: Stopped at time 15 ns + 2.
+# Stopped at breakpoint on signal "/top/CT(2)" (Event condition).
+run 100 ns
+acom -O3 -e 100 -work counter_generic -2002  $dsn/src/counter_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/counter_generic_workspace/counter_generic/src/counter_tb.vhd
+# Compile Entity "top"
+# Compile Architecture "Behavioral" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6470 kB (elbread=427 elab2=5903 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\counter_generic_workspace\counter_generic\src\wave.asdb
+#  16:07, nedìle 8. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/counter_generic_workspace/counter_generic/src/wave.asdb'.
+# Breakpoint set on signal "/top/CT(2)".
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN1,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN2,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN3,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN4,  Process: line__44.
+# KERNEL: Stopped at time 15 ns + 2.
+# Stopped at breakpoint on signal "/top/CT(2)" (Event condition).
+run 100 ns
+# KERNEL: stopped at time: 115 ns
+run 100 ns
+# KERNEL: stopped at time: 215 ns
+run 100 ns
+acom -O3 -e 100 -work counter_generic -2002  $dsn/src/counter_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/counter_generic_workspace/counter_generic/src/counter_tb.vhd
+# Compile Entity "top"
+# Compile Architecture "Behavioral" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6471 kB (elbread=427 elab2=5904 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\counter_generic_workspace\counter_generic\src\wave.asdb
+#  16:10, nedìle 8. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/counter_generic_workspace/counter_generic/src/wave.asdb'.
+# Breakpoint set on signal "/top/CT(2)".
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN1,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN2,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN3,  Process: line__44.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top/CTN4,  Process: line__44.
+# KERNEL: Stopped at time 15 ns + 2.
+# Stopped at breakpoint on signal "/top/CT(2)" (Event condition).
+run 100 ns
+# KERNEL: stopped at time: 115 ns
+run 100 ns
+# KERNEL: stopped at time: 215 ns
+run 100 ns
+# KERNEL: stopped at time: 315 ns
+run 100 ns
+acom -O3 -e 100 -work counter_generic -2002  $dsn/src/counter_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/counter_generic_workspace/counter_generic/src/counter_tb.vhd
+# Compile Entity "top"
+# Compile Architecture "Behavioral" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6471 kB (elbread=427 elab2=5904 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\counter_generic_workspace\counter_generic\src\wave.asdb
+#  16:10, nedìle 8. kvìtna 2022
+#  Simulation has been initialized
+# Breakpoint set on signal "/top/CT(2)".
+# add wave -noreg {/top/clk}
+# add wave -noreg {/top/rst}
+# add wave -noreg {/top/enable}
+# add wave -noreg {/top/CT}
+# add wave -noreg {/top/CARRY}
+# add wave -noreg {/top/sig2}
+# add wave -noreg {/top/sig3}
+# add wave -noreg {/top/sig4}
+# KERNEL: Warning: KERNEL_0291 Object "/top/clk" has already been traced.
+# KERNEL: War

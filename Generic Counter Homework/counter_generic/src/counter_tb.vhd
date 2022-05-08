@@ -37,6 +37,8 @@ begin
 			C => CARRY(1)
 		);
 	
+	sig2 <= enable AND CARRY(1);
+	
 	CTN2 : entity work.counter_generic
 		generic map (
 			C_WIDTH => C_WIDTH
@@ -44,13 +46,13 @@ begin
 		port map (
 			clk => clk,
 			rst => rst,
-			enable => CARRY(1),
+			enable => sig2,
 			limit => "1001",
 			Q => CT(1),
 			C => CARRY(2)
 		);					  
 		
-	sig3 <= CARRY(1) and CARRY(2);
+	sig3 <= sig2 and CARRY(2);
 	
 	CTN3 : entity work.counter_generic
 		generic map (
@@ -65,7 +67,7 @@ begin
 			C => CARRY(3)
 		);
 		
-	sig4 <= CARRY(1) and CARRY(2) and CARRY(3);
+	sig4 <= sig3 and CARRY(3);
 	
 	CTN4 : entity work.counter_generic
 		generic map (
@@ -87,8 +89,13 @@ begin
 		wait for CLK_P;
 		rst <= '0';
 		wait for CLK_P;
-        enable <= '1';		
-        wait;
+        
+		while true loop
+			enable <= not enable;
+			wait for CLK_P;
+		end loop;
+		
+		wait;
     end process;
 
 end Behavioral;
