@@ -1,0 +1,3 @@
+.\src\arith.vhd
+.\src\opcodes.vhd
+.\src\arith_tb.vhd

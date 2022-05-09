@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd" 
+MESSAGE "Compile Entity "arith_tb"" 
+MESSAGE "Compile Architecture "RTL" of Entity "arith_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  46.0 [ms]" 

@@ -1,0 +1,19 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+ALU=0
+[COMPILESTATUS|.\src\arith.vhd]
+FileTimeLow=3256277129
+FileTimeHigh=30958402
+Status=Modified
+[COMPILESTATUS|.\src\opcodes.vhd]
+FileTimeLow=3067710756
+FileTimeHigh=30957080
+Status=Compiled
+[COMPILESTATUS|.\src\arith_tb.vhd]
+FileTimeLow=2262441553
+FileTimeHigh=30958387
+Status=Modified
+[General]
+CurrentVersion=103
+[CACHEDOC|Aldec.Project.Generic.7|.\ALU\ALU.adf|]
+Path=

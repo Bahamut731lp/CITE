@@ -1,0 +1,34 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=alu
+[Library]
+ALU=.\ALU\ALU.lib
+[$LibMap$]
+ALU=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+[IMPLEMENTATION]
+UCF=
+[Files]
+/arith.vhd=-1
+/opcodes.vhd=-1
+/arith_tb.vhd=-1
+[Files.Data]
+.\src\arith.vhd=VHDL Source Code
+.\src\opcodes.vhd=VHDL Source Code
+.\src\arith_tb.vhd=VHDL Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

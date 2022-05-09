@@ -1,0 +1,1 @@
+-w -erf C:/My_Designs/ALU/ALU/compile/ALU.erf -d C:/My_Designs/ALU/ALU/compile -s C:/My_Designs/ALU/library.cfg -j C:/My_Designs/ALU/ALU/projlib.cfg -work alu -O3 -e 100 -work alu -2002 C:/My_Designs/ALU/ALU/src/arith_tb.vhd 
