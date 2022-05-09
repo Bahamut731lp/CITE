@@ -22,8 +22,6 @@ architecture RTL of arith_tb is
     signal overflow        : std_logic;
     signal zero            : std_logic;
     signal saturated       : std_logic;
-	signal testA        : signed(C_WIDTH - 1 downto 0);
-	signal testB        : signed(C_WIDTH - 1 downto 0);
 
 begin
 
@@ -50,14 +48,12 @@ begin
             carry           => carry,
             overflow        => overflow,
             zero            => zero,
-            saturated       => saturated,
-			testA			=> testA,
-			testB			=> testB
+            saturated       => saturated
         );
 
     process
     begin
-        loop example in sim
+        --loop example lin sim	<=
         operandB <= (operandB'low => '1', others => '0');
         for a in 0 to 2 ** C_WIDTH - 1 loop
             operandA <= std_logic_vector(to_unsigned(a, C_WIDTH));
@@ -65,7 +61,7 @@ begin
                 opcode <= opcode_iter;
                 wait for CLK_P;
             end loop;
-        end loop;
+		end loop;
 		
 		wait for CLK_P;
 

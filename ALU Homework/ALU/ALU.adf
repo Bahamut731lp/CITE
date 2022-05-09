@@ -29,6 +29,6 @@ UCF=
 .\src\opcodes.vhd=VHDL Source Code
 .\src\arith_tb.vhd=VHDL Source Code
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=arith_tb|RTL|0
 ShowHide=ShowTopLevel
 Selected=

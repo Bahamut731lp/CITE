@@ -1,102 +1,5 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.1 [s].
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0078: arith.vhd : (66, 22): Unknown identifier "ORotateRight".
-# Error: COMP96_0753: arith.vhd : (69, 31): Cannot find the "-" operator with operands denoted with the "[STD_LOGIC_VECTOR]" signature.
-# Error: COMP96_0077: arith.vhd : (69, 31): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0303: arith.vhd : (71, 22): Each choice in a case statement can be represented only once.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0753: arith.vhd : (69, 31): Cannot find the "-" operator with operands denoted with the "[STD_LOGIC_VECTOR]" signature.
-# Error: COMP96_0077: arith.vhd : (69, 31): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0303: arith.vhd : (71, 22): Each choice in a case statement can be represented only once.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  15.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0303: arith.vhd : (71, 22): Each choice in a case statement can be represented only once.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-asim -O5 +access +r +m+arith arith RTL
-# ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5440 kB (elbread=427 elab2=4874 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  22:45, nedìle 8. kvìtna 2022
-#  Simulation has been initialized
-run
-# KERNEL: Simulation has finished. There are no more test vectors to simulate.
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+arith_tb arith_tb RTL
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5443 kB (elbread=427 elab2=4876 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  22:45, nedìle 8. kvìtna 2022
-#  Simulation has been initialized
-run
-# Error: You do not have a valid license to run Advanced Dataflow. Contact Aldec for ordering information - sales@aldec.com
-endsim
-# KERNEL: stopped at time: 5273505 ns
-# VSIM: Simulation has finished.
 asim -O5 +access +r +m+arith_tb arith_tb RTL
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -117,12 +20,14 @@ asim -O5 +access +r +m+arith_tb arith_tb RTL
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5443 kB (elbread=427 elab2=4876 kernel=139 sdf=0)
+# Allocation: Simulator allocated 5449 kB (elbread=427 elab2=4882 kernel=139 sdf=0)
 # KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  22:46, nedìle 8. kvìtna 2022
+#  7:57, pondìlí 9. kvìtna 2022
 #  Simulation has been initialized
 run 100 ns
 # KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
 # add wave -noreg {/arith_tb/clk}
 # add wave -noreg {/arith_tb/operandA}
 # add wave -noreg {/arith_tb/operandB}
@@ -137,7 +42,15 @@ run 100 ns
 # VSIM: 11 object(s) traced.
 # Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
 run 100 ns
-# KERNEL: stopped at time: 200 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/ALU/ALU/src/arith.vhd
+# Compile Entity "arith"
+# Compile Architecture "RTL" of Entity "arith"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
 restart
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -156,38 +69,9 @@ restart
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5443 kB (elbread=427 elab2=4876 kernel=139 sdf=0)
+# Allocation: Simulator allocated 5449 kB (elbread=427 elab2=4882 kernel=139 sdf=0)
 # KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  22:53, nedìle 8. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 100 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5443 kB (elbread=427 elab2=4877 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  22:53, nedìle 8. kvìtna 2022
+#  8:02, pondìlí 9. kvìtna 2022
 #  Simulation has been initialized
 # Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
 run 100 ns
@@ -196,959 +80,61 @@ run 100 ns
 # KERNEL: stopped at time: 200 ns
 run 100 ns
 # KERNEL: stopped at time: 300 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0093: arith.vhd : (72, 37): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0093: arith.vhd : (72, 47): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0617: arith.vhd : (72, 25): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0093: arith.vhd : (74, 37): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0093: arith.vhd : (74, 47): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0617: arith.vhd : (74, 25): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0093: arith.vhd : (79, 38): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_RIGHT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0093: arith.vhd : (79, 48): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_RIGHT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0617: arith.vhd : (79, 25): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0093: arith.vhd : (81, 38): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_RIGHT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0093: arith.vhd : (81, 48): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_RIGHT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0617: arith.vhd : (81, 25): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
-# Compile failure 12 Errors 0 Warnings  Analysis time :  63.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0093: arith.vhd : (72, 37): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0093: arith.vhd : (72, 47): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0617: arith.vhd : (72, 25): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0093: arith.vhd : (74, 37): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0093: arith.vhd : (74, 47): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0617: arith.vhd : (74, 25): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
-# Compile failure 6 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0093: arith.vhd : (71, 36): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0093: arith.vhd : (71, 46): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0617: arith.vhd : (71, 24): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
-# Compile failure 3 Errors 0 Warnings  Analysis time :  32.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0093: arith.vhd : (71, 53): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Error: COMP96_0093: arith.vhd : (71, 63): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0093: arith.vhd : (71, 71): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.ROTATE_LEFT(ARG : SIGNED; COUNT : NATURAL) return SIGNED" subprogram.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0149: arith.vhd : (71, 79): Explicit type conversions are allowed between closely related types only.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0149: arith.vhd : (71, 79): Explicit type conversions are allowed between closely related types only.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0149: arith.vhd : (71, 87): Explicit type conversions are allowed between closely related types only.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  23:34, nedìle 8. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 100 ns
+# KERNEL: stopped at time: 800 ns
 run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5444 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  23:34, nedìle 8. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
+# KERNEL: stopped at time: 1300 ns
 run 500 ns
-# KERNEL: stopped at time: 500 ns
+# KERNEL: stopped at time: 1800 ns
 run 500 ns
-# KERNEL: stopped at time: 1 us
-run 500 ns
-# KERNEL: stopped at time: 1500 ns
-run 500 ns
-# KERNEL: stopped at time: 2 us
-run 500 ns
-# KERNEL: stopped at time: 2500 ns
-run 500 ns
-# KERNEL: stopped at time: 3 us
-run 500 ns
-# KERNEL: stopped at time: 3500 ns
-run 500 ns
-# KERNEL: stopped at time: 4 us
-run 500 ns
-# KERNEL: stopped at time: 4500 ns
-run 500 ns
-# KERNEL: stopped at time: 5 us
-run 500 ns
-# KERNEL: stopped at time: 5500 ns
-run 500 ns
-# KERNEL: stopped at time: 6 us
-run 500 ns
-# KERNEL: stopped at time: 6500 ns
-run 500 ns
-# KERNEL: stopped at time: 7 us
-run 500 ns
-# KERNEL: stopped at time: 7500 ns
-run 500 ns
-# KERNEL: stopped at time: 8 us
-run 500 ns
-# KERNEL: stopped at time: 8500 ns
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5444 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  23:36, nedìle 8. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5444 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  23:36, nedìle 8. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-run 500 ns
-# KERNEL: stopped at time: 1 us
-run 500 ns
-# KERNEL: stopped at time: 1500 ns
-run 500 ns
-# KERNEL: stopped at time: 2 us
-run 500 ns
-# KERNEL: stopped at time: 2500 ns
-run 500 ns
-# KERNEL: stopped at time: 3 us
-run 500 ns
-# KERNEL: stopped at time: 3500 ns
-run 500 ns
-# KERNEL: stopped at time: 4 us
-run 500 ns
-# KERNEL: stopped at time: 4500 ns
-run 500 ns
-# KERNEL: stopped at time: 5 us
-run 500 ns
-# KERNEL: stopped at time: 5500 ns
-run 500 ns
-# KERNEL: stopped at time: 6 us
-run 500 ns
-# KERNEL: stopped at time: 6500 ns
-run 500 ns
-# KERNEL: stopped at time: 7 us
-run 500 ns
-# KERNEL: stopped at time: 7500 ns
-run 500 ns
-# KERNEL: stopped at time: 8 us
-run 500 ns
-# KERNEL: stopped at time: 8500 ns
-run 500 ns
-# KERNEL: stopped at time: 9 us
-run 500 ns
-# KERNEL: stopped at time: 9500 ns
-run 500 ns
-# KERNEL: stopped at time: 10 us
-run 500 ns
-# KERNEL: stopped at time: 10500 ns
-run 500 ns
-# KERNEL: stopped at time: 11 us
-run 500 ns
-# KERNEL: stopped at time: 11500 ns
-run 500 ns
-# KERNEL: stopped at time: 12 us
-run 500 ns
-# KERNEL: stopped at time: 12500 ns
-run 500 ns
-# KERNEL: stopped at time: 13 us
-run 500 ns
-# KERNEL: stopped at time: 13500 ns
-run 500 ns
-# KERNEL: stopped at time: 14 us
-run 500 ns
-# KERNEL: stopped at time: 14500 ns
-run 500 ns
-# KERNEL: stopped at time: 15 us
-run 500 ns
-# KERNEL: stopped at time: 15500 ns
-run 500 ns
-# KERNEL: stopped at time: 16 us
-run 500 ns
-# KERNEL: stopped at time: 16500 ns
-run 500 ns
-# KERNEL: stopped at time: 17 us
-run 500 ns
-# KERNEL: stopped at time: 17500 ns
-run 500 ns
-# KERNEL: stopped at time: 18 us
-run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5444 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  23:51, nedìle 8. kvìtna 2022
-#  Simulation has been initialized
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-# add wave -noreg {/arith_tb/DUT/clk}
-# add wave -noreg {/arith_tb/DUT/operandA}
-# add wave -noreg {/arith_tb/DUT/operandB}
-# add wave -noreg {/arith_tb/DUT/opcode}
-# add wave -noreg {/arith_tb/DUT/opcode_signed}
-# add wave -noreg {/arith_tb/DUT/opcode_saturate}
-# add wave -noreg {/arith_tb/DUT/result}
-# add wave -noreg {/arith_tb/DUT/carry}
-# add wave -noreg {/arith_tb/DUT/overflow}
-# add wave -noreg {/arith_tb/DUT/zero}
-# add wave -noreg {/arith_tb/DUT/saturated}
-# VSIM: 11 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-# KERNEL: stopped at time: 1 us
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5444 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:26, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-# add wave -noreg {/arith_tb/DUT/clk}
-# add wave -noreg {/arith_tb/DUT/operandA}
-# add wave -noreg {/arith_tb/DUT/operandB}
-# add wave -noreg {/arith_tb/DUT/opcode}
-# add wave -noreg {/arith_tb/DUT/opcode_signed}
-# add wave -noreg {/arith_tb/DUT/opcode_saturate}
-# add wave -noreg {/arith_tb/DUT/result}
-# add wave -noreg {/arith_tb/DUT/carry}
-# add wave -noreg {/arith_tb/DUT/overflow}
-# add wave -noreg {/arith_tb/DUT/zero}
-# add wave -noreg {/arith_tb/DUT/saturated}
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/clk" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/operandA" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/operandB" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode_signed" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode_saturate" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/result" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/carry" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/overflow" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/zero" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/saturated" has already been traced.
-# VSIM: 0 object(s) traced.
-# add wave -noreg {/arith_tb/DUT/clk}
-# add wave -noreg {/arith_tb/DUT/operandA}
-# add wave -noreg {/arith_tb/DUT/operandB}
-# add wave -noreg {/arith_tb/DUT/opcode}
-# add wave -noreg {/arith_tb/DUT/opcode_signed}
-# add wave -noreg {/arith_tb/DUT/opcode_saturate}
-# add wave -noreg {/arith_tb/DUT/result}
-# add wave -noreg {/arith_tb/DUT/carry}
-# add wave -noreg {/arith_tb/DUT/overflow}
-# add wave -noreg {/arith_tb/DUT/zero}
-# add wave -noreg {/arith_tb/DUT/saturated}
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/clk" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/operandA" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/operandB" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode_signed" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode_saturate" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/result" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/carry" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/overflow" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/zero" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/saturated" has already been traced.
-# VSIM: 0 object(s) traced.
-# add wave -noreg {/arith_tb/clk}
-# add wave -noreg {/arith_tb/operandA}
-# add wave -noreg {/arith_tb/operandB}
-# add wave -noreg {/arith_tb/opcode}
-# add wave -noreg {/arith_tb/opcode_signed}
-# add wave -noreg {/arith_tb/opcode_saturate}
-# add wave -noreg {/arith_tb/result}
-# add wave -noreg {/arith_tb/carry}
-# add wave -noreg {/arith_tb/overflow}
-# add wave -noreg {/arith_tb/zero}
-# add wave -noreg {/arith_tb/saturated}
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/clk" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/operandA" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/operandB" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode_signed" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode_saturate" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/result" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/carry" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/overflow" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/zero" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/saturated" has already been traced.
-# VSIM: 0 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0077: arith.vhd : (51, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0077: arith.vhd : (52, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Error: COMP96_0015: arith_tb.vhd : (26, 2): ';' expected.
-# Error: COMP96_0015: arith_tb.vhd : (28, 1): ';' expected.
-# Compile failure 4 Errors 0 Warnings  Analysis time :  63.0 [ms]
-# ELBREAD: Elaboration process.
-# ULM: Warning: ULM_0021 Architecture "rtl" of entity "alu.arith" is not up-to-date. Please recompile file "C:\My_Designs\ALU\ALU/src/arith.vhd".
-# ELBREAD: Error: ELBREAD_0081 arith_tb.vhd (36): Design unit arith instantiated in alu.arith_tb not found in searched libraries: alu.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# 
-# VSIM: Error: Cannot initialize simulation - no top level  entity/architecture or configuration is selected
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Error: COMP96_0015: arith_tb.vhd : (26, 2): ';' expected.
-# Error: COMP96_0015: arith_tb.vhd : (28, 1): ';' expected.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Error: COMP96_0015: arith_tb.vhd : (28, 1): ';' expected.
-# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+# KERNEL: stopped at time: 2300 ns
 acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
 # Compile Entity "arith_tb"
 # Compile Architecture "RTL" of Entity "arith_tb"
 # Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5449 kB (elbread=427 elab2=4882 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
+#  8:03, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
+run 500 ns
+# KERNEL: stopped at time: 500 ns
+run 500 ns
+# KERNEL: stopped at time: 1 us
+run 500 ns
+# KERNEL: stopped at time: 1500 ns
+acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
-# Error: COMP96_0077: arith.vhd : (51, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Error: COMP96_0077: arith.vhd : (52, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith.vhd
-# Compile Entity "arith"
-# Compile Architecture "RTL" of Entity "arith"
+# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
+# Compile Entity "arith_tb"
+# Compile Architecture "RTL" of Entity "arith_tb"
 # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+arith_tb arith_tb RTL
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4879 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:30, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/clk" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/operandA" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/operandB" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode_signed" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode_saturate" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/result" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/carry" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/overflow" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/zero" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/saturated" has already been traced.
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-# VSIM: 1 object(s) traced.
-# VSIM: 1 object(s) traced.
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4879 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:30, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-run 500 ns
-# KERNEL: stopped at time: 1 us
-run 500 ns
-# KERNEL: stopped at time: 1500 ns
-run 500 ns
-# KERNEL: stopped at time: 2 us
-run 500 ns
-# KERNEL: stopped at time: 2500 ns
-run 500 ns
-# KERNEL: stopped at time: 3 us
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4879 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:34, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd $dsn/src/arith_tb.vhd
+acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/ALU/ALU/src/arith.vhd
 # Compile Entity "arith"
 # Compile Architecture "RTL" of Entity "arith"
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Error: COMP96_0117: arith_tb.vhd : (25, 24): Array type for "testA" is not constrained.
-# Error: COMP96_0117: arith_tb.vhd : (26, 24): Array type for "testB" is not constrained.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  94.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'alu.arith' instantiated in architecture 'RTL:arith_tb' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# 
-# VSIM: Error: Cannot initialize simulation - no top level  entity/architecture or configuration is selected
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Error: COMP96_0117: arith_tb.vhd : (25, 24): Array type for "testA" is not constrained.
-# Error: COMP96_0117: arith_tb.vhd : (26, 24): Array type for "testB" is not constrained.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'alu.arith' instantiated in architecture 'RTL:arith_tb' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'alu.arith' instantiated in architecture 'RTL:arith_tb' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+arith_tb arith_tb RTL
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:36, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/clk" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/operandA" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/operandB" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode_signed" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/opcode_saturate" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/result" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/carry" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/overflow" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/zero" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/saturated" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/testA" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/testB" has already been traced.
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-run 500 ns
-# KERNEL: stopped at time: 1 us
-run 500 ns
-# KERNEL: stopped at time: 1500 ns
-run 500 ns
-# KERNEL: stopped at time: 2 us
-run 500 ns
-# KERNEL: stopped at time: 2500 ns
-run 500 ns
-# KERNEL: stopped at time: 3 us
-run 500 ns
-# KERNEL: stopped at time: 3500 ns
-run 500 ns
-# KERNEL: stopped at time: 4 us
-run 500 ns
-# KERNEL: stopped at time: 4500 ns
-run 500 ns
-# KERNEL: stopped at time: 5 us
-run 500 ns
-# KERNEL: stopped at time: 5500 ns
-run 500 ns
-# KERNEL: stopped at time: 6 us
-run 500 ns
-# KERNEL: stopped at time: 6500 ns
-run 500 ns
-# KERNEL: stopped at time: 7 us
-run 500 ns
-# KERNEL: stopped at time: 7500 ns
-run 500 ns
-# KERNEL: stopped at time: 8 us
-run 500 ns
-# KERNEL: stopped at time: 8500 ns
-run 500 ns
-# KERNEL: stopped at time: 9 us
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:53, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:54, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:54, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:54, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:55, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  0:55, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  1:03, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  1:03, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5445 kB (elbread=427 elab2=4878 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  1:03, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# Error: COMP96_0123: arith.vhd : (103, 5): Variable or constant cannot be the target of a signal assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
 acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/ALU/ALU/src/arith.vhd
@@ -1160,135 +146,26 @@ acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
 # File: C:/My_Designs/ALU/ALU/src/arith.vhd
 # Compile Entity "arith"
 # Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# Error: COMP96_0015: arith.vhd : (123, 4): ';' expected.
+# Error: COMP96_0019: arith.vhd : (123, 7): Keyword 'if' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
 acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/ALU/ALU/src/arith.vhd
 # Compile Entity "arith"
 # Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# Error: COMP96_0015: arith.vhd : (123, 4): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
 acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/ALU/ALU/src/arith.vhd
 # Compile Entity "arith"
 # Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  79.0 [ms]
-run 500 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/ALU/ALU/src/arith_tb.vhd
-# Compile Entity "arith_tb"
-# Compile Architecture "RTL" of Entity "arith_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5448 kB (elbread=427 elab2=4881 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  1:26, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# add wave -noreg {/arith_tb/DUT/clk}
-# add wave -noreg {/arith_tb/DUT/operandA}
-# add wave -noreg {/arith_tb/DUT/operandB}
-# add wave -noreg {/arith_tb/DUT/opcode}
-# add wave -noreg {/arith_tb/DUT/opcode_signed}
-# add wave -noreg {/arith_tb/DUT/opcode_saturate}
-# add wave -noreg {/arith_tb/DUT/result}
-# add wave -noreg {/arith_tb/DUT/carry}
-# add wave -noreg {/arith_tb/DUT/overflow}
-# add wave -noreg {/arith_tb/DUT/zero}
-# add wave -noreg {/arith_tb/DUT/saturated}
-# add wave -noreg {/arith_tb/DUT/testA}
-# add wave -noreg {/arith_tb/DUT/testB}
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/clk" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/operandA" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/operandB" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode_signed" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/opcode_saturate" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/result" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/carry" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/overflow" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/zero" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/saturated" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/testA" has already been traced.
-# KERNEL: Warning: KERNEL_0291 Object "/arith_tb/DUT/testB" has already been traced.
-# VSIM: 0 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-# RUNTIME: Fatal Error: RUNTIME_0046 arith.vhd (112): Incompatible ranges; left: (7 downto 0), right: (8 downto 0).
-# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /arith_tb/DUT,  Process: line__41.
-# KERNEL: Stopped at time 0 ps + 1.
-# VSIM: Error: Fatal error occurred during simulation.
-run 500 ns
+# Error: COMP96_0393: arith.vhd : (121, 8): Cannot read output : "result".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
 acom -O3 -e 100 -work alu -2002  $dsn/src/arith.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/ALU/ALU/src/arith.vhd
 # Compile Entity "arith"
 # Compile Architecture "RTL" of Entity "arith"
-# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5448 kB (elbread=427 elab2=4881 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  1:27, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 500 ns
-# KERNEL: stopped at time: 500 ns
-restart
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5448 kB (elbread=427 elab2=4881 kernel=139 sdf=0)
-# KERNEL: ASDB file was created in location C:\My_Designs\ALU\ALU\src\wave.asdb
-#  1:28, pondìlí 9. kvìtna 2022
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'C:/My_Designs/ALU/ALU/src/wave.asdb'.
-run 501 ns
-acom -O3 -e 100 -work alu -2002  $dsn/src/arith_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be ava
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]

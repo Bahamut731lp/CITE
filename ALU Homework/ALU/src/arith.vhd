@@ -28,46 +28,53 @@ entity arith is
         -- output is zero
         zero            : out std_logic;
         -- output was saturated
-        saturated       : out std_logic;
-		
-		testA			: out signed;
-		testB			: out signed
+        saturated       : out std_logic
     );
 end entity;
 
 architecture RTL of arith is 
+	constant all_zeros : std_logic_vector(result'range) := (others => '0');
 begin
 
 	process(clk)
-		variable process_result : std_logic_vector(C_WIDTH downto 0) := (others => '0');
+		variable carry_checked_result : std_logic_vector(C_WIDTH downto 0) := (others => '0');
+		variable process_result : std_logic_vector(result'range) := (others => '0');
 	begin
 		
 		if rising_edge(clk) then
 			-- process_result <= (others => '0');
 			
 			case opcode is
-				when OAdd =>							
-					process_result := std_logic_vector(('0' & unsigned(operandA)) + ('0' & unsigned(operandB)));
+				when OAdd =>
+					if (opcode_signed = '1') then
+						carry_checked_result := std_logic_vector(('0' & signed(operandA)) + ('0' & signed(operandB)));
+					else
+						carry_checked_result := std_logic_vector(('0' & unsigned(operandA)) + ('0' & unsigned(operandB)));
+					end if;
 				
                 when OSub =>
-					process_result := std_logic_vector(('0' & unsigned(operandA)) - ('0' & unsigned(operandB)));
+					if (opcode_signed = '1') then
+						carry_checked_result := std_logic_vector(('0' & signed(operandA)) - ('0' & signed(operandB)));
+					else
+						carry_checked_result := std_logic_vector(('0' & unsigned(operandA)) - ('0' & unsigned(operandB)));
+					end if;
                         
                 when OMulH =>
-
+					null;
                 when OMulL =>
-
+					null;				
                 when OShiftLeft =>
  					if (opcode_signed = '1') then
 						process_result := std_logic_vector(shift_left(signed(operandA), to_integer(signed(operandB))));
 					else
-						process_result := std_logic_vector(shift_left(signed(operandA), to_integer(signed(operandB))));
+						process_result := std_logic_vector(shift_left(unsigned(operandA), to_integer(signed(operandB))));
 					end if;
 					
                 when OShiftRight =>
 					if (opcode_signed = '1') then
 						process_result := std_logic_vector(shift_right(signed(operandA), to_integer(signed(operandB))));
 					else
-						process_result := std_logic_vector(shift_right(signed(operandA), to_integer(signed(operandB))));
+						process_result := std_logic_vector(shift_right(unsigned(operandA), to_integer(unsigned(operandB))));
 					end if;
 					
                 when ORotateLeft =>	  			
@@ -81,7 +88,7 @@ begin
 					if (opcode_signed = '1') then
 						process_result := std_logic_vector(rotate_right(signed(operandA), to_integer(signed(operandB))));
 					else
-						process_result := std_logic_vector(rotate_right(signed(operandA), to_integer(signed(operandB))));
+						process_result := std_logic_vector(rotate_right(unsigned(operandA), to_integer(unsigned(operandB))));
 					end if;
 
                 when ONot =>
@@ -97,14 +104,23 @@ begin
                     process_result := operandA xor operandB;
 
                 when others =>
-					process_result := (others => '0');
+					null;
 			end case;
-
-            --TODO: Nastaveni flagu.
+		
+			if (opcode = OAdd or opcode = OSub) then
+				process_result := carry_checked_result(C_WIDTH -1 downto 0);
+			end if;
 			
+			-- Vystup ALU
+			result <= process_result;
 			
-			result <= process_result(C_WIDTH - 1 downto 0);
-			carry <= process_result( process_result'high );
+			-- Nastavení carry flagu
+			carry <= carry_checked_result( carry_checked_result'high );
+			
+			-- Nastaveni zero flagu
+			if (process_result = all_zeros) then
+				zero <= '1';
+			end if;
 		end if;
-	end process;	
+	end process;
 end architecture RTL;
