@@ -1,0 +1,19 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+top=0
+[COMPILESTATUS|.\src\mealy.vhd]
+FileTimeLow=1508143708
+FileTimeHigh=30959897
+Status=Modified
+[COMPILESTATUS|.\src\moore.vhd]
+FileTimeLow=962745171
+FileTimeHigh=30959895
+Status=Modified
+[COMPILESTATUS|.\src\pulse.vhd]
+FileTimeLow=283042224
+FileTimeHigh=30959889
+Status=Modified
+[COMPILESTATUS|.\src\top.vhd]
+FileTimeLow=1605705472
+FileTimeHigh=30959843
+Status=Modified

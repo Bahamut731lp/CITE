@@ -1,0 +1,4 @@
+i<>.\src\mealy.vhd
+i<>.\src\moore.vhd
+i<>.\src\pulse.vhd
+i<>.\src\top.vhd

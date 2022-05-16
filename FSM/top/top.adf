@@ -1,0 +1,33 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=top
+[Library]
+top=.\top\top.lib
+[$LibMap$]
+top=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+fileopenfolder=C:\Users\HP\Desktop\fsm.srcs\sources_1\imports\new
+[IMPLEMENTATION]
+UCF=
+[Files]
+/mealy.vhd=-1
+/moore.vhd=-1
+/pulse.vhd=-1
+/top.vhd=-1
+[Files.Data]
+.\src\mealy.vhd=VHDL Source Code
+.\src\moore.vhd=VHDL Source Code
+.\src\pulse.vhd=VHDL Source Code
+.\src\top.vhd=VHDL Source Code
