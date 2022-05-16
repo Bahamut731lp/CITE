@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/My_Designs/memories/test/src/ram_tb.vhd" 
+MESSAGE "Compile Entity "ram_tb"" 
+MESSAGE "Compile Architecture "Behavioral" of Entity "ram_tb"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 

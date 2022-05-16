@@ -1,0 +1,1 @@
+-w -erf C:/My_Designs/memories/test/compile/test.erf -d C:/My_Designs/memories/test/compile -s C:/My_Designs/memories/library.cfg -j C:/My_Designs/memories/test/projlib.cfg -work test -O3 -e 100 -work test -2002 C:/My_Designs/memories/test/src/ram_tb.vhd 

@@ -1,0 +1,614 @@
+acom -reorder -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Top-level unit(s) detected:
+# Entity => spram
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+spram spram Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5565 kB (elbread=427 elab2=4999 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  12:56, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0029: spram.vhd : (26, 41): Expression expected.
+# Error: COMP96_0015: spram.vhd : (26, 41): ')' expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0253: spram.vhd : (24, 50): Array element cannot be an unconstrained array.
+# Error: COMP96_0118: spram.vhd : (26, 42): Keyword 'others' is not allowed in unconstrained array aggregate.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0253: spram.vhd : (24, 50): Array element cannot be an unconstrained array.
+# Error: COMP96_0118: spram.vhd : (26, 42): Keyword 'others' is not allowed in unconstrained array aggregate.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0019: spram.vhd : (33, 3): Keyword 'end' expected.
+# Error: COMP96_0019: spram.vhd : (39, 5): Keyword 'end' expected.
+# Error: COMP96_0019: spram.vhd : (42, 8): Keyword 'process' expected.
+# Error: COMP96_0015: spram.vhd : (43, 7): ';' expected.
+# Error: COMP96_0016: spram.vhd : (43, 9): Design unit declaration expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0019: spram.vhd : (33, 3): Keyword 'end' expected.
+# Error: COMP96_0019: spram.vhd : (43, 7): Keyword 'process' expected.
+# Error: COMP96_0015: spram.vhd : (44, 6): ';' expected.
+# Error: COMP96_0016: spram.vhd : (44, 13): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0019: spram.vhd : (33, 3): Keyword 'end' expected.
+# Error: COMP96_0019: spram.vhd : (35, 7): Keyword 'process' expected.
+# Error: COMP96_0015: spram.vhd : (36, 6): ';' expected.
+# Error: COMP96_0016: spram.vhd : (36, 13): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0019: spram.vhd : (33, 3): Keyword 'end' expected.
+# Error: COMP96_0019: spram.vhd : (35, 7): Keyword 'process' expected.
+# Error: COMP96_0015: spram.vhd : (36, 6): ';' expected.
+# Error: COMP96_0016: spram.vhd : (36, 13): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0651: spram.vhd : (32, 25): Operator "=" returning 'BOOLEAN' is not defined for such operands.
+# Error: COMP96_0077: spram.vhd : (32, 6): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0019: spram.vhd : (38, 5): Keyword 'end' expected.
+# Error: COMP96_0019: spram.vhd : (42, 7): Keyword 'process' expected.
+# Error: COMP96_0015: spram.vhd : (43, 6): ';' expected.
+# Error: COMP96_0016: spram.vhd : (43, 13): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0019: spram.vhd : (37, 19): Keyword 'then' expected.
+# Error: COMP96_0019: spram.vhd : (40, 7): Keyword 'process' expected.
+# Error: COMP96_0015: spram.vhd : (41, 6): ';' expected.
+# Error: COMP96_0016: spram.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+step -out
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Error: COMP96_0269: ram_tb.vhd : (109, 19): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0617: ram_tb.vhd : (109, 12): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Error: COMP96_0269: ram_tb.vhd : (109, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0093: ram_tb.vhd : (109, 19): The type of a parameter in a subprogram call does not match to a formal parameter of the "ieee.NUMERIC_STD.RESIZE(ARG : UNSIGNED; NEW_SIZE : NATURAL) return UNSIGNED" subprogram.
+# Error: COMP96_0617: ram_tb.vhd : (109, 12): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Error: COMP96_0269: ram_tb.vhd : (109, 19): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0617: ram_tb.vhd : (109, 12): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Error: COMP96_0617: ram_tb.vhd : (109, 12): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+step -out
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+run 100 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:20, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# add wave -noreg {/spram/memory}
+# add wave -noreg {/spram/clk}
+# add wave -noreg {/spram/rst}
+# add wave -noreg {/spram/en}
+# add wave -noreg {/spram/wren}
+# add wave -noreg {/spram/din}
+# add wave -noreg {/spram/dout}
+# add wave -noreg {/spram/addr}
+# VSIM: 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:21, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5575 kB (elbread=427 elab2=5009 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:23, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+ram_tb ram_tb Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6602 kB (elbread=427 elab2=6036 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:25, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /spram/memory not found in C:/My_Designs/memories/test/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /spram/clk not found in C:/My_Designs/memories/test/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /spram/rst not found in C:/My_Designs/memories/test/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /spram/en not found in C:/My_Designs/memories/test/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /spram/wren not found in C:/My_Designs/memories/test/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /spram/din not found in C:/My_Designs/memories/test/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /spram/dout not found in C:/My_Designs/memories/test/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /spram/addr not found in C:/My_Designs/memories/test/src/wave.asdb.
+run 100 ns
+restart
+# KERNEL: stopped at time: 100 ns
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6602 kB (elbread=427 elab2=6036 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:25, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# VSIM: 20 object(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6602 kB (elbread=427 elab2=6036 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:25, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Error: COMP96_0123: spram.vhd : (35, 6): Variable or constant cannot be the target of a signal assignment.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6602 kB (elbread=427 elab2=6036 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:31, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6598 kB (elbread=427 elab2=6031 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:32, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6598 kB (elbread=427 elab2=6031 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:48, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+run 100 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/spram.vhd $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/spram.vhd
+# Compile Entity "spram"
+# Compile Architecture "Behavioral" of Entity "spram"
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Error: COMP96_0078: ram_tb.vhd : (67, 31): Unknown identifier "sdpram".
+# Error: COMP96_0055: ram_tb.vhd : (67, 26): Cannot find context item "work.sdpram".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  93.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6598 kB (elbread=427 elab2=6031 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:48, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Error: COMP96_0078: ram_tb.vhd : (67, 31): Unknown identifier "sdpram".
+# Error: COMP96_0055: ram_tb.vhd : (67, 26): Cannot find context item "work.sdpram".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work test -2002  $dsn/src/sdpram.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/sdpram.vhd
+# Compile Entity "sdpram"
+# Compile Architecture "Behavioral" of Entity "sdpram"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work test -2002  $dsn/src/ram_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/memories/test/src/ram_tb.vhd
+# Compile Entity "ram_tb"
+# Compile Architecture "Behavioral" of Entity "ram_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6598 kB (elbread=427 elab2=6032 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\memories\test\src\wave.asdb
+#  13:49, pondìlí 9. kvìtna 2022
+#  Simulation has been initialized
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/ram_tb/clk}
+# add wave -noreg {/ram_tb/rst}
+# add wave -noreg {/ram_tb/en}
+# add wave -noreg {/ram_tb/wren}
+# add wave -noreg {/ram_tb/din}
+# add wave -noreg {/ram_tb/dout}
+# add wave -noreg {/ram_tb/addr}
+# add wave -noreg {/ram_tb/rden}
+# add wave -noreg {/ram_tb/addrrd}
+# add wave -noreg {/ram_tb/addrwr}
+# add wave -noreg {/ram_tb/en_A}
+# add wave -noreg {/ram_tb/wren_A}
+# add wave -noreg {/ram_tb/addr_A}
+# add wave -noreg {/ram_tb/din_A}
+# add wave -noreg {/ram_tb/dout_A}
+# add wave -noreg {/ram_tb/en_B}
+# add wave -noreg {/ram_tb/wren_B}
+# add wave -noreg {/ram_tb/addr_B}
+# add wave -noreg {/ram_tb/din_B}
+# add wave -noreg {/ram_tb/dout_B}
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/clk" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/rst" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/en" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/wren" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/din" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/dout" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/addr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/rden" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/addrrd" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/addrwr" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/en_A" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/wren_A" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/addr_A" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/din_A" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/dout_A" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/en_B" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/wren_B" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/addr_B" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/din_B" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/ram_tb/dout_B" has already been traced.
+# VSIM: 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/memories/test/src/wave.asdb'.
+run 100 ns
+# KERNEL: stopped at time: 200 ns

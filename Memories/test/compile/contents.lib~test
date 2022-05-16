@@ -1,0 +1,7 @@
+13
+~E 1 "../src/ram_tb.vhd" 5 ram_tb
+~A 1 "../src/ram_tb.vhd" 9 Behavioral
+~E 1 "../src/sdpram.vhd" 6 sdpram
+~A 1 "../src/sdpram.vhd" 23 Behavioral
+~E 1 "../src/spram.vhd" 5 spram
+~A 1 "../src/spram.vhd" 21 Behavioral
